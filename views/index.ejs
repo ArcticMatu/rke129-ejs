@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><%= userInformation.eesnimi %> <%= userInformation.perenimi %> CV</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="cv-container">
+    <div class="blue-triangle"></div>
+
+    <div class="top-section">
+      <img src="/images/dog.jpeg" alt="Profiilipilt" class="profile-pic" id="carousel" />
+      <div class="name-contact">
+        <h1>
+          <span><%= userInformation.eesnimi %></span>
+          <span><%= userInformation.perenimi %></span>
+        </h1>
+        <div class="contact">
+          <p>Kontaktandmed</p>
+          <p>✉️ <span><%= userInformation.kontakt.email %></span></p>
+          <p>📞 <span><%= userInformation.kontakt.telefon %></span></p>
+          <p>🧍 Vanus: <span><%= userInformation.vanus %></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Haridus</h2>
+      <p><strong><em>Tartu Ülikool</em></strong><br>Informaatika (2022–2025)</p>
+      <p><strong><em>Gustav Adolfi Gümnaasium</em></strong><br>(2019–2022)</p>
+    </div>
+
+    <div class="section">
+      <h2>Töökogemus</h2>
+      <p><strong>Frendex OÜ - 2025</strong><br><em>Frontend arendaja</em></p>
+      <ul>
+        <li>Arendasin kasutajaliideseid Reacti ja TailwindCSS-iga</li>
+        <li>Koostöös UX disaineritega parendasin kasutajakogemust</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Lisakompetentsid ja kvalifikatsioonid</h2>
+      <ul>
+        <li>Inglise keel – C1 tase</li>
+        <li>HTML, CSS, JavaScript, React</li>
+        <li>Scrum’i ja Agillsete metoodikate tundmine</li>
+      </ul>
+    </div>
+
+    <button class="contact-button">
+      <span class="button-text">Contact me</span>
+    </button>
+  </div>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
